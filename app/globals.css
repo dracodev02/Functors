@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #2c2c2c;
+    
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.text-size-title {
+  font-size: 52px;
+}
+
+.text-size-subtitle {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-size-title {
+    font-size: 32px;
+  }
+
+  .text-size-subtitle {
+    font-size: 24px;
+  }
+  
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+}

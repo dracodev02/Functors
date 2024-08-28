@@ -40,7 +40,7 @@ const StartTrading = () => {
   return (
     <div className="w-full max-w-desktop mx-auto">
       <p className="text-center text-[#C1FF72]">One-click Trading</p>
-      <p className="text-center text-size-title uppercase">
+      <p className="text-center text-size-title uppercase font-futu_bold">
         Start trading in just few steps
       </p>
       <div className="grid grid-cols-2 gap-4 mt-16 max-md:mt-8 max-md:grid-cols-1">
@@ -53,7 +53,9 @@ const StartTrading = () => {
               src={item.src}
               className="absolute w-full h-full -z-[1] top-0 left-0"
             />
-            <p className="text-size-subtitle uppercase">{item.title}</p>
+            <p className="text-size-subtitle uppercase font-futu_bold">
+              {item.title}
+            </p>
             <p className="text-[#f8f8f8bf">{item.description}</p>
           </div>
         ))}

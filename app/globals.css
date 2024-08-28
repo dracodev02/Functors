@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'SFUFuturaRegular';
+  src: url('../public/FUTURA_VH/SFUFuturaRegular.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'SFUFuturaBold';
+  src: url('../public/FUTURA_VH/SFUFuturaBold.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +30,11 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #2c2c2c;
-    
+  font-family: 'SFUFuturaRegular', sans-serif;
+}
+
+.font-futu_bold {
+  font-family: 'SFUFuturaBold', sans-serif;
 }
 
 @layer utilities {

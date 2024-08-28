@@ -4,7 +4,7 @@ import functorsApp from "@/public/assets/functorsApp.png";
 const Introduce = () => {
   return (
     <div className="max-w-desktop mx-auto mt-32 flex flex-col items-center">
-      <p className="text-center text-size-title">
+      <p className="text-center text-size-title font-futu_bold   uppercase font-bold">
         Fast, Secure, User-Friendly DeFi
       </p>
       <p className="text-center mt-6 max-w-[563px]">

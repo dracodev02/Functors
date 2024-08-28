@@ -30,7 +30,7 @@ const Header = () => {
       >
         <div className="flex gap-4 items-center">
           {items.map((item, index) => (
-            <a key={index} href={item.link} className="">
+            <a key={index} href={item.link} className="font-futu_bold">
               {item.title}
             </a>
           ))}
@@ -45,7 +45,7 @@ const Header = () => {
         <div className="flex items-center gap-1">
           <ImageComp src={logoFunc.src} className="w-11 h-11" />
           <div className="flex flex-col">
-            <p>Functors</p>
+            <p className="uppercase font-futu_bold">Functors</p>
             <div className="flex text-[8px]">
               <p className="text-white/75 leading-4">Built on</p>{" "}
               <div className="ml-1 bg-white px-2 rounded-3xl grid place-items-center w-[50px]">
@@ -57,12 +57,12 @@ const Header = () => {
         <div className="flex gap-4 items-center h-full">
           <div className="flex gap-4 max-md:hidden">
             {items.map((item, index) => (
-              <a key={index} href={item.link} className="">
+              <a key={index} href={item.link} className="font-futu_bold">
                 {item.title}
               </a>
             ))}
           </div>
-          <Button title="Launch App" className="h-full" />
+          <Button title="Launch App" className="h-full font-futu_bold" />
           <IoMenu
             onClick={() => toggleMenu((prev) => !prev)}
             className="text-2xl max-md:block hidden cursor-pointer"

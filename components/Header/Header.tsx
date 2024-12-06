@@ -46,12 +46,6 @@ const Header = () => {
           <ImageComp src={logoFunc.src} className="w-11 h-11" />
           <div className="flex flex-col">
             <p className="uppercase font-futu_bold">Functors</p>
-            <div className="flex text-[8px]">
-              <p className="text-white/75 leading-4">Built on</p>{" "}
-              <div className="ml-1 bg-white px-2 rounded-3xl grid place-items-center w-[50px]">
-                <ImageComp src={logoMonad.src} />
-              </div>
-            </div>
           </div>
         </div>
         <div className="flex gap-4 items-center h-full">

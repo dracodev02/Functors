@@ -3,6 +3,7 @@ import Button from "@/package/@ui-kit/Button/Button";
 import ImageComp from "@/package/@ui-kit/Image/ImageComp";
 import logoFunc from "@/public/assets/logo_func.png";
 import logoMonad from "@/public/assets/logo_monad.svg";
+import Link from "next/link";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
@@ -49,14 +50,17 @@ const Header = () => {
           </div>
         </div>
         <div className="flex gap-4 items-center h-full">
-          <div className="flex gap-4 max-md:hidden">
+          <div className="flex gap-4 max-md:hidden opacity-70 pointer-events-none">
             {items.map((item, index) => (
               <a key={index} href={item.link} className="font-futu_bold">
                 {item.title}
               </a>
             ))}
           </div>
-          <Button title="Launch App" className="h-full font-futu_bold" />
+          <Link href={"https://app.functors.xyz/"}>
+            <Button title="Launch App" className="h-full font-futu_bold" />
+          </Link>
+
           <IoMenu
             onClick={() => toggleMenu((prev) => !prev)}
             className="text-2xl max-md:block hidden cursor-pointer"

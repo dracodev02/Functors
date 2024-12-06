@@ -1,5 +1,5 @@
 import ImageComp from "@/package/@ui-kit/Image/ImageComp";
-import functorsApp from "@/public/assets/functorsApp.png";
+import functorsApp from "@/public/assets/functorsApp.svg";
 
 const Introduce = () => {
   return (
